@@ -1,0 +1,44 @@
+let numeros = [10, 20, 30, 40, 50]; // array de números
+let nomes = ["João", "Maria", "José", "Ana", "Carlos"]; // array de strings
+console.log(numeros[2]) // nome da variável e índice
+console.log(nomes[0]) // nome da variável e índice
+console.log(nomes.length) // quantidade de elementos
+
+let frutas = ["Banana", "Maçã", "Laranja"];
+
+// Adicionando elementos
+
+frutas.push("Uva"); // Adiciona no final
+frutas.unshift("Morango"); // Adiciona no início
+console.log(frutas);
+
+// Interando sobre os elementos do Array
+frutas.forEach((fruta, index)=>{ 
+    console.log(`${index}: ${fruta}`); // Imprime o índice e o valor
+    
+    })
+
+// Removendo elementos
+frutas.pop(); // Remove o último elemento
+frutas.shift(); // Remove o primeiro elemento
+
+console.log(frutas);
+
+// Procurando elementos
+let posicao = frutas.indexOf("Banana"); // Retorna a posição do elemento
+console.log(posicao);
+
+// Removendo elementos pela posição
+frutas.splice(posicao, 1); // Remove a partir da posição
+
+console.log(frutas);
+
+let mapa = new Map(); // Criando um Mapa
+mapa.set("Nome", "Dominic"); // Adicionando um elemento chave + valor
+mapa.set("Idade", 21); // Adicionando um elemento valor + chave
+mapa.set(1, true, "Sacanagem"); // Adicionando um elemento chave + valor
+
+// Acessando Valores
+
+console.log(mapa.get("Nome")); // Acessando um valor
+console.log(mapa.get("Idade")); // Acessando um valor
