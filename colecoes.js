@@ -33,12 +33,29 @@ frutas.splice(posicao, 1); // Remove a partir da posição
 
 console.log(frutas);
 
-let mapa = new Map(); // Criando um Mapa
-mapa.set("Nome", "Dominic"); // Adicionando um elemento chave + valor
-mapa.set("Idade", 21); // Adicionando um elemento valor + chave
-mapa.set(1, true, "Sacanagem"); // Adicionando um elemento chave + valor
+let map = new Map(); // Criando um Mapa
+map.set("Nome", "Dominic"); // Adicionando um elemento chave + valor
+map.set("Idade", 21); // Adicionando um elemento valor + chave
+map.set(1, true, "Sacanagem"); // Adicionando um elemento chave + valor
+map.set("Altura", 1.87)
 
 // Acessando Valores
 
-console.log(mapa.get("Nome")); // Acessando um valor
-console.log(mapa.get("Idade")); // Acessando um valor
+console.log(map.get("Nome")); // Acessando um valor
+console.log(map.has("Idade")); // Acessando um valor
+console.log(map.get("Altura")); // Acessando um valor
+
+console.log(map.size); // Quantidade de elementos
+
+map.forEach((valor, chave)=>{ // Iterando sobre os elementos
+    console.log(`${chave}: ${valor}`); // Imprime a chave e o valor
+})
+
+map.delete("Idade"); // Removendo um elemento
+
+map.forEach((valor, chave)=>{ // Iterando sobre os elementos
+    console.log(`${chave}: ${valor}`); // Imprime a chave e o valor
+})
+
+map.clear(); // Removendo todos os elementos
+console.log(map.size);
