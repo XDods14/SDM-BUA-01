@@ -8,7 +8,8 @@ const soma = function (a,b){ // Criando função de soma, com duas variáveis
     return a + b;
 }
 
-console.log(soma(5,6)); // Imprimindo função "soma" e atribuindo valor às variáveis
+console.log(soma(5,6)); // Imprimindo função "soma" e atribuindo valor
+//  às variáveis
 
 const mult = (x,y) => x * y; // Criando função de multiplicação pelo arrow function (=>)
 
